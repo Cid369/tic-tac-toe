@@ -5,3 +5,5 @@ For this project, we have to create a Tic Tac Toe game.
 Let's dive in and see what we can do!
 
 And here we go!!!
+
+I started with basic html then started to working on scss.

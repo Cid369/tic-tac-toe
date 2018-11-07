@@ -1,1 +1,46 @@
 @import '~bootstrap/scss/bootstrap';
+$background-color: #919ade;
+$font-color: #dfdfdf;
+$white: #fff;
+$grey: rgb(128, 128, 128);
+$teal: rgb(0, 156, 161);
+$black: #000;
+
+body {
+  background-color: $background-color;
+}
+
+h1 {
+  color: #ff1a1a;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.box {
+  align-items: center;
+  border: 1px solid $white;
+  color: $font-color;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+}
+
+.row {
+  align-items: center;
+  margin: auto;
+}
+
+.grey {
+  background-color: $grey;
+}
+
+.teal {
+  background-color: $teal;
+}
