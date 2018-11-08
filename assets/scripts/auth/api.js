@@ -20,7 +20,20 @@ const signIn = function (inputData) {
   })
 }
 
+const changePassword = function (inputData) {
+  return $.ajax({
+    url: 'https://tic-tac-toe-wdi.herokuapp.com/change-password',
+    method: 'PATCH',
+    headers: {
+      Authorization: `Token token=${store.user.token}`
+    },
+    contentType: 'application/json',
+    data: JSON.stringify(inputData)
+  })
+}
+
 module.exports = {
   signUp,
-  signIn
+  signIn,
+  changePassword
 }

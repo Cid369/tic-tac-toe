@@ -2,23 +2,21 @@
 
 const store = require('../store.js')
 
-const failure = function (signUpFailureResponse) {
+const failure = (signUpFailureResponse) => {
   $('#message').html('Get it together and try again!')
-  // $('#message').css('color', 'red')
   $('#message').addClass('error-message')
   $('#message').removeClass('success-message')
 }
 
-const signUpSuccess = function (signUpResponse) {
+const signUpSuccess = (signUpResponse) => {
   $('#message').html('You signed up successfully.')
   $('#message').addClass('success-message')
   $('#message').removeClass('error-message')
-  // form clears
-  $(event.target).trigger('reset')
-  console.log('sign up ran! signUpResponse is ', signUpResponse)
+  // console.log('sign up ran! signUpResponse is ', signUpResponse)
+  // Maria helped me on this.
 }
 
-const signInSuccess = function (signInResponse) {
+const signInSuccess = (signInResponse) => {
   console.log('store object before adding user ', store)
   store.user = signInResponse.user
   $('#message').html('You signed in successfully.')
@@ -30,8 +28,17 @@ const signInSuccess = function (signInResponse) {
   $('#sign-in-form').addClass('hidden')
 }
 
+const changePasswordSuccess = (changePasswordResponse) => {
+  console.log('store object before adding user ', store)
+  $('#message').html('You changed password successfully.')
+  $('#message').addClass('success-message')
+  $('#message').removeClass('error-message')
+  $('#sign-up-form').addClass('hidden')
+}
+
 module.exports = {
   failure,
   signUpSuccess,
-  signInSuccess
+  signInSuccess,
+  changePasswordSuccess
 }
