@@ -15,19 +15,19 @@
 
 <body>
   <h1>Tic Tac GO!!!</h1>
-
+  <p id="message"></p>
 <!-- sign up form starts here. -->
-  <form id="sign-up-form" class="hidden">
+  <form id="sign-up-form">
     <legend>Sign Up!</legend>
     <input name="credentials[email]" type="text" placeholder="email">
     <input name="credentials[password]" type="password" placeholder="password">
-    <input name="credentials[password_confirmation]" type="password" placeholder="password confirmation">
+    <input name="credentials[password_confirmation]" type="password" placeholder="retype password">
     <input type="submit">
   </form>
 <!-- sign up form ends here -->
 
 <!-- sign in form starts here -->
-<form id="sign-in-form" class="hidden">
+<form id="sign-in-form">
   <legend>Sign In!</legend>
   <input name="credentials[email]" type="text" placeholder="email" />
   <input name="credentials[password]" type="password" placeholder="password" />
@@ -43,6 +43,9 @@
   <input type="submit" />
 </form>
 <!-- change password ends here -->
+
+<!-- sign out button -->
+<button id="sign-out-button" class="hidden">Sign Out</button>
 
   <h3>A simple game of Tic Tac Toe!!!</h3>
   <p>RULES FOR TIC-TAC-TOE.

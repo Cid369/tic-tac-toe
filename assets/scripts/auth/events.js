@@ -32,8 +32,15 @@ const onChangePassword = (event) => {
   $(event.target).trigger('reset')
 }
 
+const onSignOut = () => {
+  api.signOut()
+    .then(ui.signOutSuccess)
+    .catch(ui.failure)
+}
+
 module.exports = {
   onSignUp,
   onSignIn,
-  onChangePassword
+  onChangePassword,
+  onSignOut
 }

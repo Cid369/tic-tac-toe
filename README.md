@@ -7,3 +7,5 @@ Let's dive in and see what we can do!
 And here we go!!!
 
 I started with basic html then started to working on scss.
+
+Worked on forms in html, css, app, api, events, ui, and all the designated sh files.

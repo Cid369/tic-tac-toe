@@ -2,7 +2,7 @@
 
 const store = require('../store.js')
 
-const signUp = function (inputData) {
+const signUp = (inputData) => {
   return $.ajax({
     url: 'https://tic-tac-toe-wdi.herokuapp.com/sign-up',
     method: 'POST',
@@ -11,7 +11,7 @@ const signUp = function (inputData) {
   })
 }
 
-const signIn = function (inputData) {
+const signIn = (inputData) => {
   return $.ajax({
     url: 'https://tic-tac-toe-wdi.herokuapp.com/sign-in',
     method: 'POST',
@@ -20,7 +20,7 @@ const signIn = function (inputData) {
   })
 }
 
-const changePassword = function (inputData) {
+const changePassword = (inputData) => {
   return $.ajax({
     url: 'https://tic-tac-toe-wdi.herokuapp.com/change-password',
     method: 'PATCH',
@@ -32,8 +32,19 @@ const changePassword = function (inputData) {
   })
 }
 
+const signOut = () => {
+  return $.ajax({
+    url: 'https://tic-tac-toe-wdi.herokuapp.com/sign-out',
+    method: 'DELETE',
+    headers: {
+      Authorization: `Token token=${store.user.token}`
+    }
+  })
+}
+
 module.exports = {
   signUp,
   signIn,
-  changePassword
+  changePassword,
+  signOut
 }

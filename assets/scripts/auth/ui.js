@@ -36,9 +36,20 @@ const changePasswordSuccess = (changePasswordResponse) => {
   $('#sign-up-form').addClass('hidden')
 }
 
+const signOutSuccess = (signOutResponse) => {
+  $('#message').html('You should have stay :(')
+  $('#message').addClass('success-message')
+  $('#message').removeClass('error-message')
+  $('#change-password-form').addClass('hidden')
+  $('#sign-out-button').addClass('hidden')
+  $('#sign-up-form').removeClass('hidden')
+  $('#sign-in-form').removeClass('hidden')
+}
+
 module.exports = {
   failure,
   signUpSuccess,
   signInSuccess,
-  changePasswordSuccess
+  changePasswordSuccess,
+  signOutSuccess
 }
