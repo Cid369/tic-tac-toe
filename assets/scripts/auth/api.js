@@ -41,10 +41,21 @@ const signOut = () => {
     }
   })
 }
+//
+// const board = (inputData) => {
+//   return $.ajax({
+//     url: 'https://tic-tac-toe-wdi.herokuapp.com/board',
+//     method: 'POST',
+//     headers: {
+//       Authorization: `Token token=${store.user.token}`
+//     }
+//   })
+// }
 
 module.exports = {
   signUp,
   signIn,
   changePassword,
   signOut
+  // board
 }

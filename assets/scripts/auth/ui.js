@@ -26,6 +26,7 @@ const signInSuccess = (signInResponse) => {
   $('#sign-out-button').removeClass('hidden')
   $('#sign-up-form').addClass('hidden')
   $('#sign-in-form').addClass('hidden')
+  $('#start-game-button').removeClass('hidden')
 }
 
 const changePasswordSuccess = (changePasswordResponse) => {
@@ -46,10 +47,17 @@ const signOutSuccess = (signOutResponse) => {
   $('#sign-in-form').removeClass('hidden')
 }
 
+// const boardSuccess = (boardResponse) => {
+//   $('#message').html('Next player.')
+//   $('#message').addClass('success-message')
+//   $('#message').removeClass('error-message')
+// }
+//
 module.exports = {
   failure,
   signUpSuccess,
   signInSuccess,
   changePasswordSuccess,
   signOutSuccess
+  // boardSuccess
 }
