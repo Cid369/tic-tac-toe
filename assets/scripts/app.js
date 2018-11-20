@@ -30,7 +30,7 @@ $('.box').on('click', (event) => {
   changePlayer()
   $(event.target).html(player1)
   console.log($(event.target).index())
-  console.log('work?')
+  // console.log('work?')
   gameEvents.onUpdateGame($(event.target).index(), player1)
 })
 //
