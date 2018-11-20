@@ -14,7 +14,7 @@ const onCreateGame = (event) => {
 }
 
 const onUpdateGame = (index, value) => {
-  console.log('gameEvents')
+  // console.log('gameEvents')
   const futureGameState = store.currentGame.cells.splice(index, 1, value)
   const activePlayer = futureGameState.map((box, idx) => box === value ? idx : null).filter(box => box)
   const winningCombos = [
