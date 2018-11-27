@@ -10,7 +10,10 @@ const createGameSuccess = (createGameResponse) => {
   $('#message').removeClass('error-message')
   $('#new-game-button').removeClass('hidden')
   $('#start-game-button').addClass('hidden')
+<<<<<<< HEAD
   // $('#bord-container').
+=======
+>>>>>>> master
 }
 
 const updateGameSuccess = (updateGameResponse) => {

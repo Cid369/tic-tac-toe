@@ -30,12 +30,19 @@ $('.box').on('click', (event) => {
   changePlayer()
   $(event.target).html(player1)
   console.log($(event.target).index())
+<<<<<<< HEAD
   // console.log('work?')
   gameEvents.onUpdateGame($(event.target).index(), player1)
 })
 
 // These are junk codes to remind myself not to use them.
 
+=======
+  console.log('work?')
+  gameEvents.onUpdateGame($(event.target).index(), player1)
+})
+//
+>>>>>>> master
 // let currentTurn = 1
 // let movesMade = 0
 //
