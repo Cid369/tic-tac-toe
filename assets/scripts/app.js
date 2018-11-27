@@ -33,7 +33,9 @@ $('.box').on('click', (event) => {
   // console.log('work?')
   gameEvents.onUpdateGame($(event.target).index(), player1)
 })
-//
+
+// These are junk codes to remind myself not to use them.
+
 // let currentTurn = 1
 // let movesMade = 0
 //
