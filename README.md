@@ -10,10 +10,16 @@ So with this app, users will be able to sign up, sign in, change password, and l
 
 The game itself, will have a score tracker, new game button, and game reset button.
 
-*Huge credit for General Assembly and Sr writer Steven Blomquist for the help, support, and guidance!
+* Huge credit for General Assembly and Sr writer Steven Blomquist for the help, support, and guidance!
 
-*I started with basic html then started to working on scss to get the all the forms and game board in place.
+This app will utilise with HTML, CSS, javascript, and a 3rd party API.
 
-*Worked on forms in html, css, app, api, events, ui, and all the designated curl script files.
+From here on, is my step by step on my progress on this project.
 
-*Got forms to work on local but doesn't work properly on client.
+* I started with basic html then started to working on scss to get the all the forms and game board in place.
+
+* Worked on forms in html, css, app, api, events, ui, and all the designated curl script files.
+
+* Got forms to work on local but doesn't work properly on client.
+
+* After carfully checking for errors, I've found out that I was using the incorrect link for all my API. With the correct in place, I am no longer getting any error messages from Chrome inspect.
