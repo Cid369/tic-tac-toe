@@ -23,13 +23,13 @@ let player1
 const changePlayer = () => {
   const secondPlayer = player1 === 'X' ? 'O' : 'X'
   player1 = secondPlayer
-  console.log(secondPlayer)
+  // console.log(secondPlayer)
   return secondPlayer
 }
 $('.box').on('click', (event) => {
   changePlayer()
   $(event.target).html(player1)
-  console.log($(event.target).index())
+  // console.log($(event.target).index())
   // console.log('work?')
   gameEvents.onUpdateGame($(event.target).index(), player1)
 })

@@ -13,9 +13,10 @@ const onCreateGame = (event) => {
     .catch(ui.failure)
 }
 
-const onUpdateGame = (index, value) => {
+const onUpdateGame = (event, index, value) => {
   // console.log('gameEvents')
-  const futureGameState = store.currentGame.cells.splice(index, 1, value)
+  // Getting an error for Cannot read property 'cells' of undefined. How to fix it???
+  const futureGameState = store.game.cells.splice(index, 1, value)
   const activePlayer = futureGameState.map((box, idx) => box === value ? idx : null).filter(box => box)
   const winningCombos = [
     [0, 1, 2],
