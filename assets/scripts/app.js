@@ -29,7 +29,11 @@ const changePlayer = () => {
 $('.box').on('click', (event) => {
   changePlayer()
   $(event.target).html(player1)
+<<<<<<< HEAD
   // console.log($(event.target).index())
+=======
+  console.log($(event.target).index())
+>>>>>>> master
   // console.log('work?')
   gameEvents.onUpdateGame($(event.target).index(), player1)
 })

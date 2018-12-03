@@ -4,7 +4,11 @@ const store = require('../store.js')
 
 const createGame = () => {
   return $.ajax({
+<<<<<<< HEAD
     url: 'https://aqueous-atoll-85096.herokuapp.com/games[?over=]',
+=======
+    url: 'https://aqueous-atoll-85096.herokuapp.com/games',
+>>>>>>> master
     method: 'POST',
     headers: {
       Authorization: `Token token=${store.user.token}`
@@ -14,7 +18,11 @@ const createGame = () => {
 
 const updateGame = (position, token, ended) => {
   return $.ajax({
+<<<<<<< HEAD
     url: 'https://aqueous-atoll-85096.herokuapp.com/games/:id',
+=======
+    url: `https://aqueous-atoll-85096.herokuapp.com/games/${store.currentGame.id}`,
+>>>>>>> master
     method: 'PATCH',
     headers: {
       Authorization: `Token token=${store.user.token}`

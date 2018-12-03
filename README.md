@@ -24,4 +24,4 @@ From here on, is my step by step on my progress on this project.
 
 * After carfully checking for errors, I've found out that I was using the incorrect link for all my API. With the correct in place, I am no longer getting any error messages from Chrome inspect.
 
-* Trying to get the game to work but keeps getting an error message for "Cannot read property 'cells' of undefined" and I'm not sure how to fix it. Need to do more research on it. 
+* Trying to get the game to work but keeps getting an error message for "Cannot read property 'cells' of undefined" and I'm not sure how to fix it. Need to do more research on it.
